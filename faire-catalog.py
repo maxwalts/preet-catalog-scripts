@@ -35,16 +35,13 @@ product_height = product_df['Height'].iloc[0]
 product_weight = product_df['Weight'].iloc[0]
 product_warranty = 0
 
-# print(df2)
-
-# create row in preet_catalog_df
+# add product to preet_catalog_df
 new_row = [i, product_identifier, 'GIVEN_USERNAME', product_name, product_description, 
            np.nan, product_category, 'GIVEN_BRAND_ID', 'Physical', np.nan, 
            variant_min_price, 'pet service', product_length, product_width, product_height, 
            'Inches', np.nan, 'Pound', product_weight, np.nan, 
            'NO', 'YES', 'YES', 'NO']
 
-# append row to the dataframe
 preet_catalog_df.loc[len(preet_catalog_df)] = new_row
 
 print(preet_catalog_df)
